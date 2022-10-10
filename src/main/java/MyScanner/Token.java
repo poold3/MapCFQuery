@@ -19,6 +19,7 @@ public class Token {
         Order_By,
         Select,
         Delete,
+        Delete_From,
         Inner_Join,
         Join,
         On,
@@ -30,6 +31,7 @@ public class Token {
         Update,
         Set,
         Insert,
+        Merge,
         Values,
         And,
         Or,
@@ -42,6 +44,7 @@ public class Token {
         Columns,
         Only,
         White_Space,
+        ColdFusion_Var,
         None
     }
 

@@ -1,4 +1,5 @@
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 
@@ -29,6 +30,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        FileSearcher fileSearcher = new FileSearcher();
         try {
             if (args.length < 2) {
                 throw new IllegalArgumentException("Incorrect number of command-line arguments.");
@@ -40,8 +42,6 @@ public class Main {
                 throw new IllegalArgumentException("Map Directory (" + mapDirectory.getAbsolutePath() + ") either " +
                         "doesn't exist or is not a directory.");
             }
-
-            FileSearcher fileSearcher = new FileSearcher();
 
             File newMapFile = new File(mapDirectory.getAbsolutePath() + "/Summary.txt");
             if (newMapFile.exists() && !newMapFile.delete()) {
@@ -77,16 +77,51 @@ public class Main {
                 }
             }
 
-            HashMap<String, Table> tables = fileSearcher.getTables();
-            Set<String> tableNames = tables.keySet();
-            System.out.println("Tables found:");
-            for (String name: tableNames) {
-                System.out.println(name);
-            }
+            //Write tables to newMapFile
+            Collection<Table> tables = fileSearcher.getTables().values();
+            try (FileWriter myWriter = new FileWriter(newMapFile)) {
+                //List files and directories searched
+                myWriter.write("Tables found within:\n");
+                for (int i = 1; i < args.length; ++i) {
+                    myWriter.write("\t" + args[i] + "\n");
+                }
+                myWriter.write("\n");
 
+                //List tables
+                for (Table table: tables) {
+                    myWriter.write("Table: " + table.getName() + "\n");
+
+                    myWriter.write("Columns Used: \n");
+                    SortedSet<String> columnsUsed = table.getColumnsUsed();
+                    for (String column: columnsUsed) {
+                        myWriter.write("\t" + column + "\n");
+                    }
+
+                    myWriter.write("Possible Columns Used: \n");
+                    SortedSet<String> possibleColumnsUsed = table.getPossibleColumnsUsed();
+                    for (String column: possibleColumnsUsed) {
+                        myWriter.write("\t" + column + "\n");
+                    }
+
+                    myWriter.write("Locations: \n");
+                    SortedSet<String> locations = table.getFileLocations();
+                    for (String location: locations) {
+                        myWriter.write("\t" + location + "\n");
+                    }
+
+                    myWriter.write("\n");
+                }
+            }
+            catch (IOException e) {
+                e.printStackTrace();
+                throw e;
+            }
         }
         catch(Exception e) {
             e.printStackTrace();
+        }
+        finally {
+            fileSearcher.close();
         }
     }
 }

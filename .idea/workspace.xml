@@ -7,11 +7,6 @@
     <list default="true" id="32b9089c-c252-4915-83b3-ed76c0badf71" name="Changes" comment="First Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FileSearcher/FileSearcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileSearcher/FileSearcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyParser/MyParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyScanner/MyScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyScanner/MyScanner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyScanner/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyScanner/Token.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Table/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Table/Table.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +40,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="MapCFQueryMVN" />
-      <option name="PROGRAM_PARAMETERS" value="&quot;D:\theWebroot\alumnitoolsdev.byu.edu\CFQuery_Map&quot; &quot;D:\theWebroot\alumnitoolsdev.byu.edu&quot;" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;D:\theWebroot\alumnitoolsdev.byu.edu\CFQuery_Map&quot; &quot;D:\theWebroot\alumnitoolsdev.byu.edu\chapterreports&quot;" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

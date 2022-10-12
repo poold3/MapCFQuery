@@ -24,7 +24,7 @@ public class FileSearcher {
     public FileSearcher() {
         this.tables = new HashMap<>();
         //Locate chromedriver.exe
-        System.setProperty("webdriver.chrome.driver", "C:/Users/poold3/IdeaProjects/MapCFQueryMVN/JARS/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:/Users/poold3/IdeaProjects/MapCFQuery/WebDrivers/chromedriver.exe");
 
         //Set ChromeOptions
         ChromeOptions options = new ChromeOptions();

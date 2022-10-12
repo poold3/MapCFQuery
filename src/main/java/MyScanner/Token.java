@@ -1,8 +1,8 @@
 package MyScanner;
 
 public class Token {
-    private String value;
-    private TOKEN_TYPES type;
+    private final String value;
+    private final TOKEN_TYPES type;
 
     public enum TOKEN_TYPES {
         BeginTag,

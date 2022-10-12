@@ -1,6 +1,5 @@
 package MyScanner;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 
@@ -283,7 +282,7 @@ public class MyScanner {
                 length = getIdentifierLength(cfquery);
                 type = Token.TOKEN_TYPES.Identifier;
             }
-            else if (cfquery.length() >= 1 && cfquery.substring(0, 1).matches("[#]")) {
+            else if (cfquery.length() >= 1 && cfquery.substring(0, 1).matches("#")) {
                 length = getColdFusionVarLength(cfquery);
                 type = Token.TOKEN_TYPES.ColdFusion_Var;
             }

@@ -7,19 +7,15 @@ import java.util.*;
 import MyScanner.*;
 import Table.Table;
 
-import dev.failsafe.internal.util.Assert;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import javax.lang.model.element.Element;
-
 public class FileSearcher {
-    private HashMap<String, Table> tables;
-    private WebDriver driver;
+    private final HashMap<String, Table> tables;
+    private final WebDriver driver;
 
     public FileSearcher() {
         this.tables = new HashMap<>();

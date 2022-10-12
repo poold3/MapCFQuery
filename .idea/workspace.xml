@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32b9089c-c252-4915-83b3-ed76c0badf71" name="Changes" comment="Updated WebDriver path. Deleted test files.">
-      <change beforePath="$PROJECT_DIR$/src/main/java/FileSearcher/FileSearcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileSearcher/FileSearcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyScanner/MyScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyScanner/MyScanner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyScanner/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyScanner/Token.java" afterDir="false" />
+    <list default="true" id="32b9089c-c252-4915-83b3-ed76c0badf71" name="Changes" comment="Fixed warnings.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +39,6 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="MapCFQueryMVN" />
-      <option name="PROGRAM_PARAMETERS" value="&quot;D:\theWebroot\alumnitoolsdev.byu.edu\CFQuery_Map&quot; &quot;D:\theWebroot\alumnitoolsdev.byu.edu\chapterreports&quot;" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -82,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665597695688</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed warnings.">
+      <created>1665597917517</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665597917517</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -99,6 +103,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit" />
     <MESSAGE value="Updated WebDriver path. Deleted test files." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated WebDriver path. Deleted test files." />
+    <MESSAGE value="Fixed warnings." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed warnings." />
   </component>
 </project>
